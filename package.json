@@ -1,0 +1,46 @@
+{
+  "name": "file-sharing-api",
+  "version": "1.0.0",
+  "description": "A secure file storage and sharing REST API built with Node.js, Express, PostgreSQL, and Prisma",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "dotenv -e .env.test -- vitest run",
+    "test:watch": "dotenv -e .env.test -- vitest",
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "postgresql",
+    "prisma",
+    "rest-api",
+    "file-storage",
+    "jwt"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@prisma/adapter-pg": "^7.10.0",
+    "@prisma/client": "^7.10.0",
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.8",
+    "express": "^5.3.0",
+    "helmet": "^8.3.0",
+    "jsonwebtoken": "^9.0.3",
+    "multer": "^2.4.0",
+    "pg": "^8.23.1",
+    "swagger-ui-express": "^5.0.1",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "dotenv-cli": "^11.0.0",
+    "nodemon": "^3.1.14",
+    "prisma": "^7.10.0",
+    "supertest": "^7.3.1",
+    "swagger-jsdoc": "^6.3.0",
+    "vitest": "^5.0.5"
+  }
+}
